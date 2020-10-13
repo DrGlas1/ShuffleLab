@@ -1,0 +1,21 @@
+compile
+~compile
+run
+~compile
+compile
+~compile
+run
+compile
+run
+compile
+runMain cards.TestDeck
+compile
+run
+runMain cards.TestDeck
+compile
+runMain cards.TestDeck
+compile
+run
+runMain cards.TestDeck
+:q
+:quit

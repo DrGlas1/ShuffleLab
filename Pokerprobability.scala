@@ -18,4 +18,4 @@ object PokerProbability {
         println(f"$name%16s $percentages%10.6f%%")
     }
   }
-}
+}   

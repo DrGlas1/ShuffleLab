@@ -28,7 +28,7 @@ object TestDeck {
   }
 
   def main(args: Array[String]): Unit = {
-    //testCreate()
+    testCreate()
     testShuffle()
   }
 }
