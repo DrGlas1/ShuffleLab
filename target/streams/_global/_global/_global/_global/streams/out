@@ -4,15 +4,15 @@
 [0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
 [0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
 [0m[[0m[0mdebug[0m] [0m[0mReceived event for path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala (previous stamp: Hash(91ad46de2482876ee674dca27aa9b9c04409f09b), current stamp: Hash(7ad312317bc084979e6f511873e18901d72bcbbb))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala -> Trigger. Returning: (Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala, 2020-Oct-13 17:04:02.631 CET),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala (previous stamp: Hash(a955562a6f12620bc3480e7b25fab8fae950c9b4), current stamp: Hash(ec375c63b860caaef45cb360fb2d88a5b20df20f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala -> Trigger. Returning: (Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala, 2020-Oct-14 11:26:28.289 CET),Trigger)[0m
 [0m[[0m[0minfo[0m] [0m[0mBuild triggered by /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala, 2020-Oct-13 17:04:02.631 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala, 2020-Oct-14 11:26:28.289 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala. This event occurred 5 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/Deck.scala. This event occurred 3 ms since the last event for this path.[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m

@@ -7,7 +7,14 @@ case class Hand(cards: Vector[Card]) {
    * A vector of length 14 with positions 1-13 containing the number of
    * cards of that rank. Position 0 contains 0.
    */
-  def tally: Vector[Int] = ???
+  def tally: Vector[Int] = {
+    val k = (ranksSorted).length
+    val tallyVector = Array.fill(14)(0)
+    for (i <- 0 to k - 1) {
+      tallyVector(ranksSorted(i)) += 1
+    }
+    tallyVector.toVector
+  }
 
   def ranksSorted: Vector[Int] = cards.map(_.rank).sorted.toVector
 
@@ -20,7 +27,7 @@ case class Hand(cards: Vector[Card]) {
     isInSeq(ranksSorted) ||  // special case with ace interpreted as 14:
       (ranksSorted(0) == 1) && isInSeq(ranksSorted.drop(1) :+ 14)
   }
-
+  def isRoyalStraight: Boolean = isStraight && tally(1) == 1 && tally(11) == 1 && tally(12) == 1 && tally(13) == 1
   def isStraightFlush: Boolean = isStraight && isFlush
   def isFour:          Boolean = tally.contains(4)
   def isFullHouse:     Boolean = tally.contains(3) && tally.contains(2)
@@ -29,10 +36,16 @@ case class Hand(cards: Vector[Card]) {
   def isOnePair:       Boolean = tally.contains(2)
 
   def category: Int = // TODO: add more tests when tally is implemented
-    if (isStraight && isFlush) Category.StraightFlush
-    else if (isFlush)          Category.Flush
-    else if (isStraight)       Category.Straight
-    else                       Category.HighCard
+    if (isRoyalStraight && isFlush) Category.RoyalFlush
+    else if (isStraight && isFlush) Category.StraightFlush
+    else if (isFour)                Category.Fours
+    else if (isFullHouse)           Category.FullHouse
+    else if (isFlush)               Category.Flush
+    else if (isStraight)            Category.Straight
+    else if (isThrees)              Category.Threes
+    else if (isTwoPair)             Category.TwoPair
+    else if (isOnePair)             Category.OnePair
+    else                            Category.HighCard
 }
 object Hand {
   def apply(cardSeq: Card*): Hand = new Hand(cardSeq.toVector)

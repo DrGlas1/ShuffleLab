@@ -33,6 +33,7 @@ class Deck private (val initCards: Vector[Card]){
       }
   }
 }
+
 object Deck {
   def empty: Deck = new Deck(Vector())
   def apply(cards: Seq[Card]): Deck = new Deck(cards.toVector)
@@ -43,7 +44,6 @@ object Deck {
       var x = 0
       for (i <- Card.suitRange; j <- Card.rankRange) {
           newDeck(x) = Card(j, i)
-          println(newDeck(x))
           x += 1
       }
     apply(newDeck)

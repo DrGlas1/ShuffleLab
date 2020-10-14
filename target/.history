@@ -19,3 +19,32 @@ run
 runMain cards.TestDeck
 :q
 :quit
+compile
+runMain cards.TestHand
+compile
+run
+runMain cards.TestHand
+compile
+run
+runMain cards.TestHand
+compile
+~compile
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compile
+runMain cards.PokerProbability
+compil
+compile
+runMain cards.PokerProbability
