@@ -1,17 +1,27 @@
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [shufflelab / Compile / compile] Found inputs: /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/*.{java,scala},/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/src/main/java/**/*.{java,scala},/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/src/main/resources/**/*,/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/src/main/scala/**/*.{java,scala},/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/src/main/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [shufflelab / Compile / compile] Found inputs: /home/student/PGK/w.07/lab/ShuffleLab/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/java/**/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/resources/**/*,/home/student/PGK/w.07/lab/ShuffleLab/src/main/scala/**/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/scala-2.13/**/*.{java,scala}[0m
 [0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala (previous stamp: Hash(59d83aef28aeb928685feee2747ef66a8db6083f), current stamp: Hash(3ee224b859e25c413131bfc8913dd553e72236fe))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala -> Trigger. Returning: (Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala, 2020-Oct-16 14:15:29.193 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/h/d3/g/el3114da-s/PGK/w.07/ShuffleLab/PlayPoker.scala, 2020-Oct-16 14:15:29.193 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala -> Trigger. Returning: (Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 17:59:41.084 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 17:59:41.084 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala (previous stamp: Hash(da39a3ee5e6b4b0d3255bfef95601890afd80709), current stamp: Hash(9cdf500f082b528311a3995891ba4dfbeac864af))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala -> Trigger. Returning: (Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 18:04:07.802 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 18:04:07.802 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for shufflelab/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. This event occurred 2 ms since the last event for this path.[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m

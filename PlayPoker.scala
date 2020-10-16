@@ -8,6 +8,14 @@ object PlayPoker {
     val player2 = Hand.from2(deck)
     val result = player1.isBetter(player1, player2)
 
+    def thinking: Unit = {
+        Thread.sleep(500); print(".")
+        Thread.sleep(500); print(".")
+        Thread.sleep(500); print(".")
+        Thread.sleep(500); print(".")
+        Thread.sleep(500); print(".")
+    }
+
     def victoryMessage(result: Int, player1: Hand = player1, player2: Hand = player2): Unit = {
         if (result == 1) {
             println(s"""
@@ -23,7 +31,7 @@ object PlayPoker {
             |
             |Player 1 had ${player1.whatBullshitDidTheyGet(player1)}""".stripMargin)
         }
-        else if (result == 0) {
+        else {
             println(s"""
             |It was a tie!
             |Player 1 had ${player1.whatBullshitDidTheyGet(player1)}
@@ -33,12 +41,6 @@ object PlayPoker {
     }
 
     def main(args: Array[String]): Unit = {
-        println(s"""
-        |Player 1's Hand: 
-        |${player1.cards}
-        |
-        |Player 2's Hand:
-        |${player2.cards}""".stripMargin)
-        victoryMessage(result)
+        println(s"${player1}")
     }
 }

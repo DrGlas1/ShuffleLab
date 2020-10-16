@@ -15,54 +15,11 @@ case class Hand(cards: Vector[Card]) {
     }
     tallyVector.toVector
   }
-  def checkKicker(hand: Hand): Int = {
-    var highCard = 0
-    var i = 0
-    var quit = true
-    while (i < 12 && quit) {
-      hand.ranksSorted(i) match {
-        case 1 => highCard = i; quit = false
-        case _ => i += 1
-      }
-    }
-    highCard
-  }
   
-  def compareKicker(player1: Hand, player2: Hand): Int = {
-    if (checkKicker(player1) < checkKicker(player2)) 1
-    else if (checkKicker(player1) > checkKicker(player2)) -1
-    else 0
-  }
-
   def isBetter(player1: Hand, player2: Hand): Int = {
     if (player1.category < player2.category) 1
     else if (player1.category > player2.category) -1
-    else {
-      player1.category match {
-        case 0 => 0
-        case 1 => {
-          compareKicker(player1, player2)
-        }
-        case 2 => {
-          compareKicker(player1, player2)
-        }
-        case 3 => 0
-        case 4 => 0
-        case 5 => 0
-        case 6 => {
-          compareKicker(player1, player2)
-        }
-        case 7 => {
-          compareKicker(player1, player2)
-        }
-        case 8 => {
-          compareKicker(player1, player2)
-        }
-        case 9 => {
-          compareKicker(player1, player2)
-        }
-      }
-    }
+    else 0
   }
 
   def ranksSorted: Vector[Int] = cards.map(_.rank).sorted.toVector
@@ -116,6 +73,12 @@ object Hand {
   def from1(deck: Deck): Hand = new Hand(deck.peek(5))
   def from2(deck: Deck): Hand = new Hand(deck.peek2(5))
   def removeFrom(deck: Deck): Hand = new Hand(deck.remove(5))
+
+  def draw1(deck: Deck): Hand = new Hand(deck.peek(2))
+  def draw2(deck: Deck): Hand = new Hand(deck.peek2(2))
+  def flopp(deck: Deck): Hand = new Hand(deck.chooseFlopp)
+  def turn(deck: Deck): Hand = new Hand(deck.chooseTurn)
+  def river(deck: Deck): Hand = new Hand(deck.chooseRiver)
 
   object Category {
     val RoyalFlush = 0

@@ -12,6 +12,10 @@ class Deck private (val initCards: Vector[Card]){
   def peek(n: Int): Vector[Card] = cards.take(n).toVector
   def peek2(n: Int): Vector[Card] = cards.drop(n).take(n).toVector
 
+  def chooseFlopp: Vector[Card] = cards.drop(4).take(3).toVector
+  def chooseTurn: Vector[Card] = cards.drop(7).take(1).toVector
+  def chooseRiver: Vector[Card] = cards.drop(8).take(1).toVector
+
   def remove(n: Int): Vector[Card] = {
     val init = peek(n)
     cards = cards.drop(n)

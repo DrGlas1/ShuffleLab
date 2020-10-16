@@ -92,3 +92,71 @@ runMain cards.PlayPoker
 compile
 runMain cards.PlayPoker
 compile
+runMain cards.PlayPoker
+runMain cards.TestHand
+runMain cards.TestDeck
+runMain cards.PlayPoker
+compile
+runMain cards.PlayPoker
+compile
+~compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+runMain cards.PlayerPoker
+compile
+runMain cards.PlayerPoker
+compile
+runMain cards.PlayerPoker
+compile
+runMain cards.PlayerPoker
+compile
+runMain cards.PlayerPoker
+compile
+runMain cards.PlayerPoker
+runMain cards.TexasHoldem
+runMain cards.TestDeck
+runMain cards.TestHand
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compil
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
