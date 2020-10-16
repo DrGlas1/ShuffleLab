@@ -10,7 +10,7 @@ object PokerProbability {
     val categoryCounter = Array.ofDim[Int](10)
     for (i <- 1 to n) {
       deck.shuffle()
-      val xs = Hand.from(deck)
+      val xs = Hand.from1(deck)
       categoryCounter(xs.category) += 1
     }
     categoryCounter.toVector

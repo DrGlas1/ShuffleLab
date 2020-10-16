@@ -6,9 +6,11 @@ class Deck private (val initCards: Vector[Card]){
   def reset(): Unit = cards = initCards.toArray
   def apply(i: Int): Card = cards(i)
   def toVector: Vector[Card] = cards.toVector
+  def drop(n: Int): Vector[Card] = cards.drop(n).toVector 
   override def toString: String = cards.mkString(" ")
 
   def peek(n: Int): Vector[Card] = cards.take(n).toVector
+  def peek2(n: Int): Vector[Card] = cards.drop(n).take(n).toVector
 
   def remove(n: Int): Vector[Card] = {
     val init = peek(n)

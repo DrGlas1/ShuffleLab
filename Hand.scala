@@ -8,15 +8,79 @@ case class Hand(cards: Vector[Card]) {
    * cards of that rank. Position 0 contains 0.
    */
   def tally: Vector[Int] = {
-    val k = (ranksSorted).length
+    val k = cards.length
     val tallyVector = Array.fill(14)(0)
-    for (i <- 0 to k - 1) {
-      tallyVector(ranksSorted(i)) += 1
+    for (i <- 0 until k) {
+      tallyVector(cards(i).rank) += 1
     }
     tallyVector.toVector
   }
+  def checkKicker(hand: Hand): Int = {
+    var highCard = 0
+    var i = 0
+    var quit = true
+    while (i < 12 && quit) {
+      hand.ranksSorted(i) match {
+        case 1 => highCard = i; quit = false
+        case _ => i += 1
+      }
+    }
+    highCard
+  }
+  
+  def compareKicker(player1: Hand, player2: Hand): Int = {
+    if (checkKicker(player1) < checkKicker(player2)) 1
+    else if (checkKicker(player1) > checkKicker(player2)) -1
+    else 0
+  }
+
+  def isBetter(player1: Hand, player2: Hand): Int = {
+    if (player1.category < player2.category) 1
+    else if (player1.category > player2.category) -1
+    else {
+      player1.category match {
+        case 0 => 0
+        case 1 => {
+          compareKicker(player1, player2)
+        }
+        case 2 => {
+          compareKicker(player1, player2)
+        }
+        case 3 => 0
+        case 4 => 0
+        case 5 => 0
+        case 6 => {
+          compareKicker(player1, player2)
+        }
+        case 7 => {
+          compareKicker(player1, player2)
+        }
+        case 8 => {
+          compareKicker(player1, player2)
+        }
+        case 9 => {
+          compareKicker(player1, player2)
+        }
+      }
+    }
+  }
 
   def ranksSorted: Vector[Int] = cards.map(_.rank).sorted.toVector
+
+  def whatBullshitDidTheyGet(hand: Hand): String = {
+    hand.category match {
+      case 0 => "A ROYAL FLUSH!!! WHAT IN THE ABSOLUTE FUCK"
+      case 1 => "A Straight Flush? Cool,cool,cool,cool,cool..."
+      case 2 => "Four of a kind! Sick"
+      case 3 => "A Full House!"
+      case 4 => "A Flush!"
+      case 5 => "A Straight"
+      case 6 => "Threes"
+      case 7 => "a Two Pair"
+      case 8 => "a One Pair"
+      case 9 => "Nothing..."
+    }
+  }
 
   def isFlush: Boolean = cards.length > 0 && cards.forall(_.suit == cards(0).suit)
 
@@ -27,7 +91,7 @@ case class Hand(cards: Vector[Card]) {
     isInSeq(ranksSorted) ||  // special case with ace interpreted as 14:
       (ranksSorted(0) == 1) && isInSeq(ranksSorted.drop(1) :+ 14)
   }
-  def isRoyalStraight: Boolean = isStraight && tally(1) == 1 && tally(11) == 1 && tally(12) == 1 && tally(13) == 1
+  def isRoyalStraight: Boolean = isStraight && tally(1) == 1 && tally(10) == 1 && tally(11) == 1 && tally(12) == 1 && tally(13) == 1
   def isStraightFlush: Boolean = isStraight && isFlush
   def isFour:          Boolean = tally.contains(4)
   def isFullHouse:     Boolean = tally.contains(3) && tally.contains(2)
@@ -49,7 +113,8 @@ case class Hand(cards: Vector[Card]) {
 }
 object Hand {
   def apply(cardSeq: Card*): Hand = new Hand(cardSeq.toVector)
-  def from(deck: Deck): Hand = new Hand(deck.peek(5))
+  def from1(deck: Deck): Hand = new Hand(deck.peek(5))
+  def from2(deck: Deck): Hand = new Hand(deck.peek2(5))
   def removeFrom(deck: Deck): Hand = new Hand(deck.remove(5))
 
   object Category {
