@@ -150,7 +150,7 @@ case class Hand(cards: Vector[Card]) {
       case 6 => "Threes"
       case 7 => "a Two Pair"
       case 8 => "a One Pair"
-      case 9 => "Nothing..."
+      case 9 => "just a High Card"
     }
   }
 

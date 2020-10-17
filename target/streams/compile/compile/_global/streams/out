@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala:224:13: not found: value rintln[0m
-[0m[[0m[31merror[0m] [0m[0m            rintln("Player 2 folded!")[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala:49:67: not found: value player1Final[0m
+[0m[[0m[31merror[0m] [0m[0m        println(s"\nPlayer 1 had ${player1.whatBullshitDidTheyGet(player1Final)}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala:50:67: not found: value player2Final[0m
+[0m[[0m[31merror[0m] [0m[0m        println(s"\nPlayer 2 had ${player2.whatBullshitDidTheyGet(player2Final)}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
