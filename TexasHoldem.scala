@@ -16,34 +16,10 @@ object TexasHoldem {
     val turn = Hand.turn(deck)
     val river = Hand.river(deck)
 
-    def continuingBettingPhase: Unit = {     
-        (player2bet > player1bet) match {
-            case true => {
-                player1bet += scala.io.StdIn.readLine("Player 1's bet: ").toInt
-                println(player1bet)
-            }
-            case false => 
-        }
-        (player2bet < player1bet) match {
-            case true => {
-                player2bet += scala.io.StdIn.readLine("Player 2's bet: ").toInt
-                println(player1bet)
-                continuingBettingPhase
-            }
-            case false => 
-        }
-    }
-
     def bettingPhase: Unit = {
-            player1bet += scala.io.StdIn.readLine("Player 1's bet: ").toInt
-            println(player1bet)
-            player2bet += scala.io.StdIn.readLine("Player 2's bet: ").toInt
-            println(player2bet)
+        player1bet += scala.io.StdIn.readLine("Player 1's bet: ").toInt
+        player2bet += scala.io.StdIn.readLine("Player 2's bet: ").toInt
 
-        (player2bet == player1bet) match {
-            case true =>
-            case false => continuingBettingPhase
-        }
     }
 
     def main(args: Array[String]): Unit = {    
@@ -54,7 +30,7 @@ object TexasHoldem {
         |
         |After that the betting phase will begin!""".stripMargin)
 
-        Thread.sleep(10000)
+        Thread.sleep(1000)
 
         println("\nPLAYER 2 TURN AWAY NOW")
 
@@ -70,7 +46,7 @@ object TexasHoldem {
         |
         |""".stripMargin)
 
-        Thread.sleep(10000)
+        Thread.sleep(1000)
 
         println("TURN AWAY NOW")
 
@@ -115,7 +91,7 @@ object TexasHoldem {
         |
         |""".stripMargin)
 
-        Thread.sleep(10000)
+        Thread.sleep(1000)
 
         println("""
         |
@@ -150,7 +126,8 @@ object TexasHoldem {
         |
         |""".stripMargin)
 
-        bettingPhase 
+        val n = scala.io.StdIn.readLine("Player 1's bet: ")
+        println(n)
 
         Thread.sleep(5000)
 

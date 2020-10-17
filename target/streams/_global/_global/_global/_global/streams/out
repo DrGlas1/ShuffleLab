@@ -1,27 +1,51 @@
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [shufflelab / Compile / compile] Found inputs: /home/student/PGK/w.07/lab/ShuffleLab/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/java/**/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/resources/**/*,/home/student/PGK/w.07/lab/ShuffleLab/src/main/scala/**/*.{java,scala},/home/student/PGK/w.07/lab/ShuffleLab/src/main/scala-2.13/**/*.{java,scala}[0m
 [0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala -> Trigger. Returning: (Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 17:59:41.084 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 17:59:41.084 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala -> Trigger. Returning: (Creation(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:10:57.251 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:10:57.251 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala (previous stamp: Hash(da39a3ee5e6b4b0d3255bfef95601890afd80709), current stamp: Hash(9cdf500f082b528311a3995891ba4dfbeac864af))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala -> Trigger. Returning: (Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 18:04:07.802 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala, 2020-Oct-16 18:04:07.802 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala (previous stamp: Hash(da39a3ee5e6b4b0d3255bfef95601890afd80709), current stamp: Hash(69d1acd5deb7f178c326a5edba2c16195d3bae5f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala -> Trigger. Returning: (Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:03.795 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:03.795 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for shufflelab/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala. This event occurred 2 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala. This event occurred 14 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala (previous stamp: Hash(69d1acd5deb7f178c326a5edba2c16195d3bae5f), current stamp: Hash(fb3b70e77c5e72d93e6ade0b3977d95424a0beca))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala -> Trigger. Returning: (Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:35.013 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:35.013 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m4. Monitoring source files for shufflelab/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mshufflelab / Compile / compile - Accepted event for /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala (previous stamp: Hash(fb3b70e77c5e72d93e6ade0b3977d95424a0beca), current stamp: Hash(c7e1c71be4ae30344ee71bd3b849f73e3c0b18c8))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala -> Trigger. Returning: (Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:51.904 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/student/PGK/w.07/lab/ShuffleLab/TestCompare.scala, 2020-Oct-17 00:12:51.904 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m5. Monitoring source files for shufflelab/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m

@@ -2,6 +2,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards/TestCompare$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/TestCompare$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards/Hand$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/Hand$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards/Hand.class[0m
@@ -26,6 +28,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/Hand$Category$Name$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards/TestHand.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/TestHand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards/TestCompare.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/TestCompare.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards/Card$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/student/PGK/w.07/lab/ShuffleLab/target/scala-2.13/classes/cards/Card$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	cards/Hand$Category$.class[0m

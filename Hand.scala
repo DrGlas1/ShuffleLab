@@ -15,11 +15,126 @@ case class Hand(cards: Vector[Card]) {
     }
     tallyVector.toVector
   }
+
+  def length: Int = cards.length
+
+  def highestCard(hand: Hand): Int = {
+    hand.ranksSorted.reverse.last match {
+      case 1 => 14
+      case _ => hand.ranksSorted.reverse(0)
+    }
+  }
+
+  def checkPair(hand: Hand): Int = {
+    var value = 0
+    for (i <- 0 until hand.length - 1) {
+      if (hand.ranksSorted(i) == hand.ranksSorted(i + 1)) value = hand.ranksSorted(i)
+    }
+    value
+  }
+
+  def checkTwoPair(hand: Hand): Vector[Int] = {
+    var pairOne = 0
+    var pairTwo = 0
+    if (hand.ranksSorted(1) == hand.ranksSorted(2)) {
+      pairOne = hand.ranksSorted(1)
+      if (hand.ranksSorted(3) == hand.ranksSorted(4)) {
+        pairTwo = hand.ranksSorted(3)
+      }
+      else if (hand.ranksSorted(4) == hand.ranksSorted(5)) {
+        pairTwo = hand.ranksSorted(4)
+      }
+      else if (hand.ranksSorted(5) == hand.ranksSorted(6)) {
+        pairTwo = hand.ranksSorted(5)
+      }
+      else if (hand.ranksSorted(6) == hand.ranksSorted(7)) {
+        pairTwo = hand.ranksSorted(6)
+      }
+    }
+    else if (hand.ranksSorted(2) == hand.ranksSorted(3)) {
+      pairOne = hand.ranksSorted(2)
+      if (hand.ranksSorted(4) == hand.ranksSorted(5)) {
+        pairTwo = hand.ranksSorted(4)
+      }
+      else if (hand.ranksSorted(5) == hand.ranksSorted(6)) {
+        pairTwo = hand.ranksSorted(5)
+      }
+      else if (hand.ranksSorted(6) == hand.ranksSorted(7)) {
+        pairTwo = hand.ranksSorted(6)
+      }
+    }
+    else if (hand.ranksSorted(3) == hand.ranksSorted(4)) {
+      pairOne = hand.ranksSorted(3)
+      if (hand.ranksSorted(5) == hand.ranksSorted(6)) {
+        pairTwo = hand.ranksSorted(5)
+      }
+      else if (hand.ranksSorted(6) == hand.ranksSorted(7)) {
+        pairTwo = hand.ranksSorted(6)
+      }
+    }
+    else if (hand.ranksSorted(4) == hand.ranksSorted(5)) {
+      pairOne = hand.ranksSorted(4)
+      pairTwo = hand.ranksSorted(6)
+    }
+
+    if (pairOne > pairTwo) {
+      Vector(pairOne, pairTwo)
+    }
+    else {
+      Vector(pairTwo, pairOne)
+    }
+    
+  }
+
+  def checkThrees(hand: Hand): Int = {
+    var value = 0
+    for (i <- 0 until hand.length - 1) {
+      if (hand.ranksSorted(i) == hand.ranksSorted(i + 1) 
+      && hand.ranksSorted(i) == hand.ranksSorted(i + 2)) value = hand.ranksSorted(i)
+    }
+    value
+  }
   
   def isBetter(player1: Hand, player2: Hand): Int = {
     if (player1.category < player2.category) 1
     else if (player1.category > player2.category) -1
-    else 0
+    else {
+      player1.category match {
+        case 6 => {
+          if(checkThrees(player1) > checkThrees(player2)) 1
+          else if (checkThrees(player1) < checkThrees(player2)) -1
+          else 0
+        }
+        case 7 => {
+          val player1TwoPair = checkTwoPair(player1)
+          val player2TwoPair = checkTwoPair(player2)
+          if (player1TwoPair(1) > player2TwoPair(1)) 1
+          else if (player1TwoPair(1) < player2TwoPair(1)) -1
+          else if (player1TwoPair(2) > player2TwoPair(2)) 1
+          else if (player1TwoPair(2) < player2TwoPair(2)) -1
+          else {
+            if (highestCard(player1) > highestCard(player2)) 1
+            else if (highestCard(player1) < highestCard(player2)) -1
+            else 0
+          }
+        }
+        case 8 => {
+          if (checkPair(player1) > checkPair(player2)) 1
+          else if (checkPair(player1) > checkPair(player2)) -1
+          else {
+            if (highestCard(player1) > highestCard(player2)) 1
+            else if (highestCard(player1) < highestCard(player2)) -1
+            else 0
+          }
+        }
+        case 9 => {
+          if (highestCard(player1) > highestCard(player2)) 1
+          else if (highestCard(player1) < highestCard(player2)) -1
+          else 0
+        }
+        case _ => 0
+      }
+    }
   }
 
   def ranksSorted: Vector[Int] = cards.map(_.rank).sorted.toVector

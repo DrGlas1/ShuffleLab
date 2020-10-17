@@ -1,4 +1,5 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/student/PGK/w.07/lab/ShuffleLab/Deck.scala:55:11: method copyArrayToImmutableIndexedSeq in class LowPriorityImplicits2 is deprecated (since 2.13.0): Implicit conversions from Array to immutable.IndexedSeq are implemented by copying; Use the more efficient non-copying ArraySeq.unsafeWrapArray or an explicit toIndexedSeq call[0m
-[0m[[0m[33mwarn[0m] [0m[0m    apply(newDeck)[0m
-[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/student/PGK/w.07/lab/ShuffleLab/TexasHoldem.scala:214:28: not enough arguments for constructor Hand: (cards: Vector[cards.Card]): cards.Hand.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter cards.[0m
+[0m[[0m[31merror[0m] [0m[0m        val player2Final = new Hand()[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

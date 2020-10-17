@@ -160,3 +160,31 @@ compile
 runMain cards.TexasHoldem
 compile
 runMain cards.TexasHoldem
+~compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TestCompare
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+compile
+runMain cards.TexasHoldem
+1
+runMain cards.TexasHoldem
